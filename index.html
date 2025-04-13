@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartHome | Automatización de Casas Inteligentes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="container">
+      <a href="#" class="logo">Smart<span>Home</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#tecnologias">Tecnologías</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="inicio">
+    <div class="container">
+      <h1>Transforma tu hogar en una <span>casa inteligente</span></h1>
+      <p>Controla luces, cámaras, electrodomésticos y más desde tu celular o con tu voz.</p>
+      <a href="#servicios" class="btn">Ver paquetes</a>
+    </div>
+  </section>
+
+  <!-- Servicios / Paquetes -->
+  <section class="services" id="servicios">
+    <div class="container">
+      <h2>Nuestros Paquetes</h2>
+      <div class="grid">
+        <div class="card">
+          <i class="fas fa-lightbulb"></i>
+          <h3>Básico</h3>
+          <p>Luces inteligentes + control por voz</p>
+          <p class="price">$199</p>
+          <a href="#contacto" class="btn-outline">Contratar</a>
+        </div>
+        <div class="card">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Intermedio</h3>
+          <p>Luces + cámaras + termostato</p>
+          <p class="price">$499</p>
+          <a href="#contacto" class="btn-outline">Contratar</a>
+        </div>
+        <div class="card">
+          <i class="fas fa-robot"></i>
+          <h3>Premium</h3>
+          <p>Casa 100% automatizada</p>
+          <p class="price">$999</p>
+          <a href="#contacto" class="btn-outline">Contratar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tecnologías -->
+  <section class="tech" id="tecnologias">
+    <div class="container">
+      <h2>Tecnologías Compatibles</h2>
+      <div class="flex">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Google_Home_logo.png" alt="Google Home">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Alexa_logo.png" alt="Alexa">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple HomeKit">
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section class="testimonials" id="testimonios">
+    <div class="container">
+      <h2>Lo que dicen nuestros clientes</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Cliente">
+          <p>"Ahora controlo mi casa desde el trabajo. ¡Increíble!"</p>
+          <span>- María G.</span>
+        </div>
+        <div class="card">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente">
+          <p>"La instalación fue rápida y el soporte 24/7 es un plus."</p>
+          <span>- Carlos M.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class="contact" id="contacto">
+    <div class="container">
+      <h2>Contacto</h2>
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="text" name="name" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="phone" placeholder="Teléfono">
+        <textarea name="message" placeholder="Mensaje" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+      <div class="contact-info">
+        <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+        <p><i class="fas fa-envelope"></i> contacto@smarthome.com</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 SmartHome. Todos los derechos reservados.</p>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón WhatsApp -->
+  <a href="https://wa.me/1234567890" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
