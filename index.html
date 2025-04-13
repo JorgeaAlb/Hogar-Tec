@@ -11,7 +11,7 @@
   <!-- Navbar -->
   <header>
     <div class="container">
-      <a href="#" class="logo">Smart<span>Home</span></a>
+      <a href="#" class="logo">Hogar<span>Tec</span></a>
       <nav>
         <ul class="nav-links">
           <li><a href="#inicio">Inicio</a></li>
@@ -71,10 +71,12 @@
     <div class="container">
       <h2>Tecnologías Compatibles</h2>
       <div class="flex">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Google_Home_logo.png" alt="Google Home">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Alexa_logo.png" alt="Alexa">
+        <img src="https://logos-world.net/wp-content/uploads/2021/08/Google-Home-Logo-700x394.png" alt="Google Home" style="height: 60px;">
+        
+        <img src="https://logos-world.net/wp-content/uploads/2021/02/Amazon-Alexa-Logo.png" alt="Alexa" style="height: 60px;">
+
         <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple HomeKit">
-      </div>
+    </div>
     </div>
   </section>
 
@@ -84,14 +86,14 @@
       <h2>Lo que dicen nuestros clientes</h2>
       <div class="grid">
         <div class="card">
-          <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Cliente">
+          <img src="images/person/ethan.png" alt="Cliente">
           <p>"Ahora controlo mi casa desde el trabajo. ¡Increíble!"</p>
-          <span>- María G.</span>
+          <span>- Ethan Gtz.</span>
         </div>
         <div class="card">
-          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente">
+          <img src="images/person/ana.jpg" alt="Cliente">
           <p>"La instalación fue rápida y el soporte 24/7 es un plus."</p>
-          <span>- Carlos M.</span>
+          <span>- Ana Ruiz.</span>
         </div>
       </div>
     </div>
@@ -101,16 +103,21 @@
   <section class="contact" id="contacto">
     <div class="container">
       <h2>Contacto</h2>
-      <form name="contact" method="POST" data-netlify="true">
-        <input type="text" name="name" placeholder="Nombre" required>
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <!-- Campo anti-spam (oculto) -->
+        <p class="hidden">
+          <label>No llenes esto: <input name="bot-field"></label>
+        </p>
+        
+        <input type="text" name="nombre" placeholder="Nombre" required>
         <input type="email" name="email" placeholder="Email" required>
-        <input type="tel" name="phone" placeholder="Teléfono">
-        <textarea name="message" placeholder="Mensaje" required></textarea>
+        <input type="tel" name="telefono" placeholder="Teléfono">
+        <textarea name="mensaje" placeholder="Mensaje" required></textarea>
         <button type="submit" class="btn">Enviar</button>
       </form>
       <div class="contact-info">
-        <p><i class="fas fa-phone"></i> +1 234 567 890</p>
-        <p><i class="fas fa-envelope"></i> contacto@smarthome.com</p>
+        <p><i class="fas fa-phone"></i> 378 119 7624</p>
+        <p><i class="fas fa-envelope"></i> contacto@hogartec.com</p>
       </div>
     </div>
   </section>
@@ -118,7 +125,7 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2023 SmartHome. Todos los derechos reservados.</p>
+      <p>&copy; 2025 HogarTec. Todos los derechos reservados.</p>
       <div class="social">
         <a href="#"><i class="fab fa-facebook"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -128,7 +135,7 @@
   </footer>
 
   <!-- Botón WhatsApp -->
-  <a href="https://wa.me/1234567890" class="whatsapp-btn">
+  <a href="https://wa.me/3781197624" class="whatsapp-btn">
     <i class="fab fa-whatsapp"></i>
   </a>
 
