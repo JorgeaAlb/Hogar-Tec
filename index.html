@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Audio element (hidden) -->
+  <audio id="sonido1500" src="1500.mp3"></audio>
+
   <!-- Navbar -->
   <header>
     <div class="container">
@@ -42,21 +45,21 @@
           <i class="fas fa-lightbulb"></i>
           <h3>Básico</h3>
           <p>Luces inteligentes + control por voz</p>
-          <p class="price">$199</p>
-          <a href="#contacto" class="btn-outline">Contratar</a>
+          <p class="price">$1500 🥵</p>
+          <a href="#contacto" class="btn-outline" id="btn1500">Contratar</a>
         </div>
         <div class="card">
           <i class="fas fa-shield-alt"></i>
           <h3>Intermedio</h3>
           <p>Luces + cámaras + termostato</p>
-          <p class="price">$499</p>
+          <p class="price">$5000</p>
           <a href="#contacto" class="btn-outline">Contratar</a>
         </div>
         <div class="card">
           <i class="fas fa-robot"></i>
           <h3>Premium</h3>
           <p>Casa 100% automatizada</p>
-          <p class="price">$999</p>
+          <p class="price">$8000</p>
           <a href="#contacto" class="btn-outline">Contratar</a>
         </div>
       </div>
@@ -88,9 +91,9 @@
           <span>- Ethan Gtz.</span>
         </div>
         <div class="card">
-          <img src="images/person/ana.jpg" alt="Cliente">
+          <img src="images/person/ulises.jpg" alt="Cliente">
           <p>"La instalación fue rápida y el soporte 24/7 es un plus."</p>
-          <span>- Ana Ruiz.</span>
+          <span>- Ulises Ramirez.</span>
         </div>
       </div>
     </div>
@@ -135,6 +138,15 @@
   <a href="https://wa.me/3781197624" class="whatsapp-btn">
     <i class="fab fa-whatsapp"></i>
   </a>
+
+  <script>
+    // Reproducir sonido cuando se hace clic en el botón de 1500
+    document.getElementById('btn1500').addEventListener('click', function() {
+      var audio = document.getElementById('sonido1500');
+      audio.currentTime = 0; // Reinicia el audio si ya se estaba reproduciendo
+      audio.play();
+    });
+  </script>
 
   <script src="script.js"></script>
 </body>
